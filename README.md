@@ -10,7 +10,7 @@ After downloading the .zip extract the files, press the .exe and it should work.
 Environment PyCharm 2022.3.3 Manual:
 
 1. Download zip by pressing on the green [<> Code] after it finished download drag its content into PycharmProjects
-2. Open Pyhcharm select Verkehrsnetze-UE3-BIF-DUA-2-SS2023-ALGOS-DE-main under Projects
+2. Open Pyhcharm select Wiener Verkehrsnetz-UE3-BIF-DUA-2-SS2023-ALGOS-DE-main under Projects
 3. Press STRG+ALT+S a window will open where you type interpreter into the top left box
 4. Click on Add Interpreter and selected Add Local Interpreter
 5. Under Virtualevn Environment select Base interpreter Python310 and click on ok, 38+ should work also
