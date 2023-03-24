@@ -51,3 +51,6 @@ Daher ergibt sich aus der Kombination dieser Teile die insgesamt Zeitkomplexitä
 #### Experimente und Messungen zur Laufzeit
 Um die Laufzeit des Algorithmus zu messen, können verschiedene Experimente mit unterschiedlichen Eingabedateien und U-Bahn-Netzwerken durchgeführt werden. Die Laufzeit kann mithilfe der Python time-Bibliothek gemessen werden, indem die Start- und Endzeit vor und nach der Ausführung des Algorithmus erfasst werden. Dabei sollte beachtet werden, dass die tatsächliche Laufzeit von verschiedenen Faktoren abhängt, wie z.B. der Größe des Netzwerks, der Anzahl der Umstiege und der Hardware des Computers, auf dem der Code ausgeführt wird.
 
+Any questions you can contact me on Discord Alex22#8812
+
+
