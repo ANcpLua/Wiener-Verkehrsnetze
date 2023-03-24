@@ -3,7 +3,7 @@
 
 # Wiener Verkehrsnetz-UE3-BIF-DUA-2-SS2023-ALGOS-DE
 
-Alexander Nachtmann und Stephanie Rauscher ÜBUNG § - ÜBUNG 3 (GRAPHEN) aka IMPORT PYTHON 
+Alexander Nachtmann und Stephanie Rauscher  ÜBUNG 3 - (GRAPHEN) aka guide to https://docs.python.org/3/tutorial/modules.html XD
 
 After downloading the .zip extract the files, press the .exe and it should work. If it does not follow the steps below.
 
