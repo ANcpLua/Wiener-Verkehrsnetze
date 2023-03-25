@@ -5,16 +5,16 @@
 
 Alexander Nachtmann und Stephanie Rauscher ÜBUNG 3 - (GRAPHEN) aka guide to https://docs.python.org/3/tutorial/modules.html XD
 
-After downloading the .zip extract the files, press the .exe and it should work. If it does not follow the steps below.
+After downloading the .zip file, extract its contents and click on the .exe file. It should work. If it doesn't, follow the steps below.
 
-Environment PyCharm 2022.3.3 Manual:
+Environment: PyCharm 2022.3.3 Manual:
 
-1. Download zip by pressing on the green [<> Code] after it finished download drag its content into PycharmProjects
-2. Open Pyhcharm select Wiener Verkehrsnetz-UE3-BIF-DUA-2-SS2023-ALGOS-DE-main under Projects
-3. Press STRG+ALT+S a window will open where you type interpreter into the top left box
-4. Click on Add Interpreter and selected Add Local Interpreter
-5. Under Virtualevn Environment select Base interpreter Python310 and click on ok, 38+ should work also
-8. Press Shift+F10 to start (recommend to change the hotkey 1.press STRG+ALT+S 2.type run b into the searchbox 3.right click run and select add keyboard shortcut)
+1. Download the zip file by clicking on the green [<> Code] button. Once the download is complete, extract its contents into the PycharmProjects folder.
+2. Open PyCharm and select Wiener Verkehrsnetz-UE3-BIF-DUA-2-SS2023-ALGOS-DE-main under Projects.
+3. Press CTRL+ALT+S to open a window, then type "interpreter" into the top-left search box.
+4. Click on "Add Interpreter" and select "Add Local Interpreter."
+5. Under "Virtualenv Environment," choose "Base interpreter Python310" and click "OK." Versions 3.8 and above should also work.
+6. Press Shift+F10 to start (it is recommended to change the hotkey). Press CTRL+ALT+S, type "run b" into the search box, right-click "Run" and select "Add Keyboard Shortcut."
 
     - [Beschreibung des verwendeten Algorithmus](#Beschreibung-des-verwendeten-Algorithmus)
     - [O-Notation](#O-Notation)
