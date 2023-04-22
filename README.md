@@ -1,10 +1,5 @@
 
 
-
-# Wiener Verkehrsnetz-UE3-BIF-DUA-2-SS2023-ALGOS-DE
-
-Alexander Nachtmann und Stephanie Rauscher ÜBUNG 3 - (GRAPHEN) aka guide to https://docs.python.org/3/tutorial/modules.html XD
-
 After downloading the .zip file, extract its contents and click on the .exe file. It should work. If it doesn't, follow the steps below.
 
 Environment: PyCharm 2022.3.3 Manual:
