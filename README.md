@@ -35,20 +35,18 @@ Möchten Sie weiterfahren (w), neu anfangen (n) oder beenden (x)?
 
 ```  
 
-#### Beschreibung des verwendeten Algorithmus
-Der Algorithmus basiert auf einer modifizierten Version des Dijkstra-Algorithmus, wobei eine Vorrangwarteschlange (Heap) verwendet wird, um die Knoten mit den niedrigsten Kosten zu priorisieren. Der Graph wird aus einer Datei eingelesen und in einer dictionay-basierten Datenstruktur gespeichert. Die Funktion shortest_path implementiert den modifizierten Dijkstra-Algorithmus, indem sie die Vorrangwarteschlange verwendet, um den aktuellen Knoten (Station) mit den geringsten Kosten zu finden und diesen Knoten zu erkunden. Um das Umsteigen zwischen Linien zu berücksichtigen, wird eine zusätzliche Kostenkomponente, line_switch_penalty, hinzugefügt, wenn ein Umstieg erforderlich ist. Der Algorithmus terminiert, sobald das Ziel erreicht ist oder keine weiteren Knoten zu erkunden sind.
-#### O-Notation
+Beschreibung des verwendeten Algorithmus
+Wir verwenden den Dijkstra-Algorithmus, der ein gängiger Algorithmus zur Lösung des Problems des kürzesten Pfades in einem Graphen ist. Dieser Algorithmus beginnt an einem Startknoten und arbeitet sich schrittweise durch den Graphen, indem er immer den Knoten mit den geringsten Gesamtkosten (vom Startknoten aus) auswählt und zu einem bereits besuchten Pfad hinzufügt. Sobald der Zielknoten erreicht wird, gibt der Algorithmus den gefundenen Pfad zurück. Wir haben diesen Algorithmus leicht modifiziert, um eine zusätzliche "Strafe" für das Wechseln von Linien einzuführen. Das U-Bahn-Netzproblem stellt eine Situation dar, in der das Wechseln von Linien oft mit zusätzlichem Aufwand und Zeit verbunden ist. Daher ist es sinnvoll, Linienwechsel zu minimieren, und der Algorithmus berücksichtigt dies, indem er die Kosten für das Wechseln von Linien zu den Gesamtkosten hinzufügt.
 
- O(|V|log|V|): 
-Einfügen und Entfernen der Knoten aus der Prioritätswarteschlange. Im schlimmsten Fall werden alle Knoten zur Warteschlange hinzugefügt und aus der Warteschlange entfernt, was für jeden Knoten eine Zeit von O(log|V|) in Anspruch nimmt.
+O-Notation
+Die Zeitkomplexität des Dijkstra-Algorithmus ist O((V+E) log V), wobei V die Anzahl der Knoten (Stationen) und E die Anzahl der Kanten (Verbindungen zwischen Stationen) im Graphen ist. Diese Komplexität ergibt sich aus zwei Hauptkomponenten:
 
-O(|E|log|V|):
- Verarbeitung jeder Kante. Im schlimmsten Fall verarbeitet der Algorithmus alle Kanten. Für jede Kante aktualisiert der Algorithmus die Prioritätswarteschlange mit neuen Kosten. Die Aktualisierung der Prioritätswarteschlange kostet O(log|V|) pro Kante.
- 
-Daher ergibt sich aus der Kombination dieser Teile die insgesamt Zeitkomplexität von O(|V|log|V| + |E|log|V|).
-#### Experimente und Messungen zur Laufzeit
+O(|V|log|V|): Jeder der |V| Knoten kann maximal einmal in die Prioritätswarteschlange eingefügt und entfernt werden. Da die Prioritätswarteschlange als Binär-Heap implementiert ist, kostet das Einfügen und Entfernen eines Elements O(log|V|). Daher ergibt die Behandlung aller Knoten insgesamt O(|V|log|V|).
+
+O(|E|log|V|): Für jede der |E| Kanten kann die Prioritätswarteschlange aktualisiert werden, wenn die Kante verarbeitet wird. Da eine Aktualisierung in der Prioritätswarteschlange ebenfalls O(log|V|) kostet, resultiert die Behandlung aller Kanten in O(|E|log|V|). Die Summe dieser beiden Komponenten ergibt die Gesamtzeitkomplexität O((V+E) log V). Die Raumkomplexität ist O(V), da wir Informationen für jeden Knoten in der Prioritätswarteschlange und in der Menge der besuchten Knoten speichern müssen. Die Effizienz des Algorithmus hängt stark von der Struktur des U-Bahn-Netzes ab. Bei einem dicht verbundenen Netz könnte der Algorithmus ineffizient sein, während er bei einem weniger dicht verbundenen Netz effizienter sein könnte.
+
+Experimente und Messungen zur Laufzeit
 Um die Laufzeit des Algorithmus zu messen, können verschiedene Experimente mit unterschiedlichen Eingabedateien und U-Bahn-Netzwerken durchgeführt werden. Die Laufzeit kann mithilfe der Python time-Bibliothek gemessen werden, indem die Start- und Endzeit vor und nach der Ausführung des Algorithmus erfasst werden. Dabei sollte beachtet werden, dass die tatsächliche Laufzeit von verschiedenen Faktoren abhängt, wie z.B. der Größe des Netzwerks, der Anzahl der Umstiege und der Hardware des Computers, auf dem der Code ausgeführt wird.
 
 Any questions you can contact me on Discord Alex22#8812
-
 
